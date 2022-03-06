@@ -1,0 +1,123 @@
+.info__wrapper   {
+}
+.info   {
+   padding: 15rem 0;
+   text-align: center;
+}
+
+
+
+
+.contacts-section {
+   padding: 10rem 0;
+   text-align: center;
+}
+.contacts-section__item:not(:last-child) {
+   margin-bottom: 2rem;
+}
+.contacts-section__item svg {
+   display: block;
+   width: 4rem;
+   height: 4rem;
+   margin-bottom: 1rem;
+   fill: var(--third-brand-color);
+}
+.contacts-section__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.contacts-section .text--mb {
+   margin-bottom: 8rem;
+}
+
+
+
+.title-section__wrapper {
+   background-color: var(--first-brand-color);
+}
+.title-section {
+   text-align: center;
+   padding: 15rem 0 12rem;
+}
+
+@media screen and (min-width: 1440px)  {
+  .info {
+     display: flex;
+     justify-content: space-between;
+     padding-left: 10rem;
+     padding-right: 10rem;
+  }
+  .info .img {
+     margin: 0;
+     object-fit: cover;
+     min-width: 70rem;
+     height: 100%;
+  }
+  .info__box {
+     text-align: left;
+     padding-top: 2rem;
+     position: relative;
+  }
+  .info__box::before {
+     position: absolute;
+     display: block;
+     bottom: 0;
+     right: 0;
+     content: '';
+     width: 20rem;
+     height: 20rem;
+     background-image: url('../img/square-gray.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     z-index: -1;
+  }
+  .info__img-box {
+     position: relative;
+  }
+  .info__img-box::before {
+     position: absolute;
+     display: block;
+     width: 100%;
+     height: 100%;
+     content: '';
+     background-color: var(--fourth-brand-color);
+     top: -5rem;
+     left: -5rem;
+  }
+
+
+  .title-section__wrapper {
+     position: relative;
+  }
+  .title-section__wrapper::before {
+     position: absolute;
+     display: block;
+     content: '';
+     width: 20%;
+     left: 5rem;
+     top: 0;
+     height: 100%;
+     background-image: url('../img/bg3.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: auto 100%;
+  }
+  .title-section__wrapper::after {
+   position: absolute;
+   display: block;
+   content: '';
+   width: 10rem;
+   right: 5rem;
+   bottom: 2rem;
+   height: 10rem;
+   background-image: url('../img/square-dark.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+}
+}
+
+
